@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 375px;
+    background-color: blue;
+    margin: auto;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 63px;
+    object-fit: scale-down;
+}
