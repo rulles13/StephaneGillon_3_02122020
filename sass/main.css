@@ -1,4 +1,24 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+.page {
+  max-width: 667px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
 .header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,22 +28,40 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 375px;
-  background-color: blue;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo {
-  width: 200px;
-  height: 63px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  width: 50%;
+  padding: 10px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.btn {
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  background-color: #cfcdcd;
+  width: 100%;
+  font-weight: 800;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0px 15px 10px -12px #333333;
+          box-shadow: inset 0px 15px 10px -12px #333333;
+}
+
+.location .location__ico {
+  padding-right: 20px;
+}
+
+.explo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,14 +69,42 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  padding: 30px;
+  text-align: center;
+}
+
+.util {
+  padding: 30px 10px;
+}
+
+.util li:before {
+  color: blueviolet;
+}
+
+.shdw {
+  -webkit-box-shadow: 5px 5px 10px #cfcdcd;
+          box-shadow: 5px 5px 10px #cfcdcd;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;
   height: 50px;
   border-radius: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   color: white;
 }
