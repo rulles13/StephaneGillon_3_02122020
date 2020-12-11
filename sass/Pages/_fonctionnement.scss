@@ -1,0 +1,37 @@
+.util{
+    padding: 30px 10px;
+    ol {
+        list-style: none;
+        counter-reset: li;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    li::before {
+        content: counter(li);
+        color: red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100px;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        background-color: $colour-primary;
+
+    }
+    li {
+        counter-increment: li;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 60px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background-color: $colour-medium-grey;
+    }
+    
+
+}

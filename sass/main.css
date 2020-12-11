@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Shrikhand&display=swap);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,6 +9,11 @@ h1 {
   font-size: 1.6em;
 }
 
+h2 {
+  font-size: 1.4em;
+  padding: 10px 0;
+}
+
 .page {
   max-width: 667px;
   margin: auto;
@@ -15,28 +21,9 @@ h1 {
   font-size: 1rem;
 }
 
-.header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.logo {
-  width: 50%;
-  padding: 10px 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -ms-grid-column-align: center;
-      justify-self: center;
+.shdw {
+  -webkit-box-shadow: 5px 5px 10px #cfcdcd;
+          box-shadow: 5px 5px 10px #cfcdcd;
 }
 
 .location {
@@ -77,19 +64,6 @@ h1 {
   text-align: center;
 }
 
-.util {
-  padding: 30px 10px;
-}
-
-.util li:before {
-  color: blueviolet;
-}
-
-.shdw {
-  -webkit-box-shadow: 5px 5px 10px #cfcdcd;
-          box-shadow: 5px 5px 10px #cfcdcd;
-}
-
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,5 +81,156 @@ h1 {
           align-items: center;
   text-decoration: none;
   color: white;
+  margin: 40px 0;
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logo {
+  width: 50%;
+  padding: 10px 0;
+}
+
+.util {
+  padding: 30px 10px;
+}
+
+.util ol {
+  list-style: none;
+  counter-reset: li;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+.util li::before {
+  content: counter(li);
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -100px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #9356DC;
+}
+
+.util li {
+  counter-increment: li;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #cfcdcd;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+  padding: 30px 10px;
+}
+
+.restaurant .restaurant__card {
+  border-radius: 20px;
+  width: 300px;
+  height: 240px;
+  margin: auto;
+}
+
+.restaurant .restaurant__card .restaurant__card__img {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant .restaurant__card .restaurant__card__legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurant .restaurant__card .restaurant__card__legend .restaurant__card__legend__text {
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant .restaurant__card .restaurant__card__legend .restaurant__card__legend__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellow;
+}
+
+.footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+}
+
+.footer__logo {
+  font-family: 'Shrikhand', cursive;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+.footer__style {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.footer__icon {
+  width: 15px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

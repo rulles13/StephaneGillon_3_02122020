@@ -1,0 +1,28 @@
+.footer{
+    background-color: $colour-dark-grey;
+    color: white;
+    padding: 20px;
+}
+
+.footer__logo
+{
+    font-family: 'Shrikhand', cursive;
+}
+
+.footer__link
+{
+    color: white;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.footer__style{
+    list-style: none;
+    padding-inline-start: 0;
+    
+}
+
+.footer__icon {
+    width: 15px;
+    margin-right: 10px;
+}
