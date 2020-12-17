@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 1.6em;
 }
@@ -64,6 +68,10 @@ h2 {
   text-align: center;
 }
 
+.ahrefno {
+  text-decoration: none;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +108,7 @@ h2 {
 }
 
 .logo {
-  width: 50%;
+  width: 180px;
   padding: 10px 0;
 }
 
@@ -123,7 +131,7 @@ h2 {
 
 .util li::before {
   content: counter(li);
-  color: red;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +141,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: -100px;
+  margin-left: -75px;
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -155,7 +163,18 @@ h2 {
   height: 60px;
   border-radius: 20px;
   margin-bottom: 20px;
-  background-color: #cfcdcd;
+  background-color: #F6F6F6;
+}
+
+.util .cont_etaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.util .etape {
+  margin-left: 15px;
 }
 
 .restaurant {
@@ -163,48 +182,61 @@ h2 {
   padding: 30px 10px;
 }
 
-.restaurant .restaurant__card {
+.restaurant__card {
   border-radius: 20px;
   width: 300px;
   height: 240px;
   margin: auto;
 }
 
-.restaurant .restaurant__card .restaurant__card__img {
+.restaurant__card__img {
   width: 100%;
-  height: 100px;
+  height: 170px;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0;
 }
 
-.restaurant .restaurant__card .restaurant__card__legend {
+.restaurant__card__legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: white;
   border-radius: 0 0 20px 20px;
-  padding: 20px;
+  padding: 5px 10px;
+  height: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-decoration: none;
 }
 
-.restaurant .restaurant__card .restaurant__card__legend .restaurant__card__legend__text {
+.restaurant__card__legend__text {
   vertical-align: middle;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0;
 }
 
-.restaurant .restaurant__card .restaurant__card__legend .restaurant__card__legend__heart {
+.restaurant__card__legend__text__nom {
+  text-decoration: none;
+  color: red;
+}
+
+.restaurant__card__legend__text__lieu {
+  text-decoration: none;
+  color: #6200ff;
+}
+
+.restaurant__card__legend__heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: yellow;
 }
 
 .footer {

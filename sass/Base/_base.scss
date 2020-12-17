@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
 h1{font-size: 1.6em;}
 h2{
     font-size: 1.4em;
@@ -35,10 +38,13 @@ h2{
     flex-direction: column;
     align-items: center;
     background-color: $colour-light-grey;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 
+.ahrefno{
+    text-decoration: none;
+}
 
 
 
