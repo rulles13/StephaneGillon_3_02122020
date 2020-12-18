@@ -40,30 +40,29 @@
     display: flex;
     align-items: center;
     font-size: 1.4em;
-    color: black;              
+    color: black;
+    position: relative;              
 }
 /*.restaurant__card__legend__heart:hover{
     color: rgb(255, 0, 21);
 } */
 
 .heart_default{
+    
     opacity: 1;
-    &:hover::before{
-        opacity: 1;
-    }
-    &::before{
+    transition: 400ms;
+    &:hover{
         opacity: 0;
-        transform: 1s;
-        content: "";
     }
 }
-/*.heart_hover{
+.heart_hover{
+    position:absolute;
     opacity: 0;
-    background:linear-gradient(0deg, $colour-primary 0%,$colour-secondary 100%);
-    &:hover::before{
-        opacity: 0;
-    }
-    &::before{
+    background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 400ms;
+    &:hover{
         opacity: 1;
     }
-}*/
+}
