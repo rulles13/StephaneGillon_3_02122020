@@ -1,0 +1,66 @@
+.heroe{
+    text-align: center;
+}
+.heroe_photo{
+    width: 375px;
+    height: 260px;
+    object-fit: cover;
+    margin: auto;
+    
+}
+.resto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.5rem;
+    padding: 30px 25px 10px 13px;
+}
+
+.menu{
+    background-color: $colour-light-grey;
+    width: 375px;
+    margin: auto;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: -45px;   
+}
+.menu__service{
+    font-size: 1em;
+    margin: 20px 25px 5px 22px;
+
+}
+.menu__cont__plat{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 350px;
+    height: 68px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.plat{
+    overflow: hidden;    
+}
+.plat__nom{
+    font-size: 1.2rem;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.plat__info{
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.prix{
+    display: flex;
+    width: 60px;
+    font-weight: 800;
+    justify-content: center;
+}

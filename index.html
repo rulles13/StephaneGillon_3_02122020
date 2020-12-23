@@ -9,6 +9,15 @@
 </head>
 <body>
     <div class="page">
+        
+        <div class="loader">
+            <div class="circle circle--1"></div>
+            <div class="circle circle--2"></div>
+            <div class="circle circle--3"></div>
+            <div class="circle circle--4"></div>
+            <div class="circle circle--5"></div>
+        </div>
+        
         <header class="header">
             <img class="logo" src="./Images/logo/ohmyfood.png" alt="logo oh my food">
         </header>        
@@ -21,21 +30,20 @@
             <span>Découvrez des restaurants d'exceptions, sélectionnés par nos soins.</br></span>
             <a class="btn shdw" href="#">Explorer nos restaurants</a>
         </div>
-        
         <div class="util">
             <h1>Fonctionnement</h1>
             <div class="cont_etaps">
                 <ol>
-                    <li>
-                        <i class="fas fa-mobile-alt "></i>
+                    <li class="shdw">
+                        <i class="fas fa-mobile-alt color_ico"></i>
                         <div class="etape">Choisissez un restaurant</div>
                     </li>
-                    <li>
-                        <i class="fas fa-list"></i>
+                    <li class="shdw">
+                        <i class="fas fa-list color_ico"></i>
                         <div class="etape">Composez votre menu</div>
                     </li>
-                    <li>
-                        <i class="fas fa-store"></i>
+                    <li class="shdw">
+                        <i class="fas fa-store color_ico"></i>
                         <div class="etape">Dégustez au restaurant</div>
                     </li>
                 </ol>
@@ -45,6 +53,7 @@
             <h1>Restaurants</h1>
             <a href="la_palette_du_gout.html" class="ahrefno">
                 <div class="restaurant__card shdw">
+                    <div class="nouveau">Nouveau</div>
                     <img src="./Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                         class="restaurant__card__img" >
                     <div class="restaurant__card__legend">
@@ -61,6 +70,7 @@
             </a>
             <a href="la_note_enchantée.html" class="ahrefno">
                 <div class="restaurant__card shdw">
+                    <div class="nouveau">Nouveau</div>
                     <img src="./Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                         class="restaurant__card__img" >
                     <div class="restaurant__card__legend">
@@ -69,7 +79,8 @@
                             <div class="restaurant__card__legend__text__lieu">Charonne</div>
                         </div>
                         <div class="restaurant__card__legend__heart">
-                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart heart_default"></i>
+                            <i class="fas fa-heart heart_hover"></i>
                         </div>
                     </div>
                 </div>
@@ -84,7 +95,8 @@
                             <div class="restaurant__card__legend__text__lieu">Cité Rouge</div>
                         </div>
                         <div class="restaurant__card__legend__heart">
-                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart heart_default"></i>
+                            <i class="fas fa-heart heart_hover"></i>
                         </div>
                     </div>
                 </div>
@@ -99,7 +111,8 @@
                             <div class="restaurant__card__legend__text__lieu">Folie-Méricourt</div>
                         </div>
                         <div class="restaurant__card__legend__heart">
-                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart heart_default"></i>
+                            <i class="fas fa-heart heart_hover"></i>
                         </div>
                     </div>
                 </div>

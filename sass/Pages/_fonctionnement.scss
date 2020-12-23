@@ -2,7 +2,6 @@
     width: 375px;
     padding: 30px 10px;
     margin: auto;
-    background-color: rgb(182, 139, 221);
     ol {
         list-style: none;
         counter-reset: li;
@@ -33,7 +32,16 @@
         border-radius: 20px;
         margin-bottom: 20px;
         background-color: $colour-light-grey;
+        &:hover{
+        background-color: lighten($colour-primary, 35);
+        .color_ico{
+        color:$colour-primary;
+        
     }
+        }
+    }
+    
+    
     .cont_etaps{
         display: flex;
         margin: auto;
