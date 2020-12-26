@@ -113,6 +113,59 @@ h2 {
   color: #278870;
 }
 
+.menu__c__p--1 {
+  animation: show 400ms 200ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--2 {
+  animation: show 400ms 400ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--3 {
+  animation: show 400ms 600ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--4 {
+  animation: show 400ms 800ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--5 {
+  animation: show 400ms 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--6 {
+  animation: show 400ms 1200ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--7 {
+  animation: show 400ms 1400ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--8 {
+  animation: show 400ms 1600ms;
+  animation-fill-mode: forwards;
+}
+
+.menu__c__p--9 {
+  animation: show 400ms 1800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
   position: fixed;
   display: flex;
@@ -408,6 +461,7 @@ h2 {
   margin-bottom: 20px;
   padding: 10px;
   background-color: white;
+  opacity: 0;
 }
 
 .plat {

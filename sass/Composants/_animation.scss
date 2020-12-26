@@ -1,0 +1,17 @@
+@for $i from 1 through 9 {
+    .menu__c__p--#{$i} {
+        
+        animation: show 400ms 200ms*$i;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+    }
+}
