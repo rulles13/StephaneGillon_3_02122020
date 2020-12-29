@@ -1,5 +1,11 @@
 .restaurant{
     background-color: $colour-light-grey;
+    
+}
+.restaurant__cont{
+    width: 375px;
+    margin: auto;
+
     padding: 30px 10px;
 }
 .restaurant__card{

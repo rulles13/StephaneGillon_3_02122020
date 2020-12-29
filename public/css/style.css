@@ -18,7 +18,6 @@ h2 {
 }
 
 .page {
-  max-width: 667px;
   margin: auto;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -61,6 +60,13 @@ h2 {
 
 .ahrefno {
   text-decoration: none;
+}
+
+.link_index {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  color: black;
 }
 
 .btn {
@@ -178,9 +184,12 @@ h2 {
   border-radius: 15px;
   margin: auto;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
   background-color: white;
   opacity: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .prix {
@@ -188,12 +197,13 @@ h2 {
   height: 68px;
   font-weight: 800;
   transform: translateX(0);
-  transition: transform 1000ms;
+  transition: transform 600ms;
   border: 1px solid purple;
-  position: absolute;
+  position: relative;
   right: 0;
-  top: 0;
+  top: 10px;
   align-items: flex-end;
+  justify-content: flex-end;
   padding: 10px;
   background-color: white;
 }
@@ -205,26 +215,34 @@ h2 {
   width: 60px;
   height: 68px;
   background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transform: translateX(60px);
+  transition: transform 600ms cubic-bezier(0.32, 0, 0.07, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*.cont_prix{
-    position: relative;
-    top: 10px;
-    right: -11px;
-    display: flex;
-    align-items: flex-end;
-    border: 1px solid green;
-    border-radius:0 15px 15px 0;
-}*/
+.check_circle {
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 600ms;
+  color: #99E2D0;
+}
+
 .menu__cont__plat:hover .check_box {
-  transform: scaleX(1);
+  transform: translateX(0);
 }
 .menu__cont__plat:hover .prix {
   transform: translateX(-60px);
+}
+.menu__cont__plat:hover .check_circle {
+  transform: rotate(0);
 }
 
 .loader {
@@ -379,6 +397,11 @@ h2 {
 
 .restaurant {
   background-color: #F6F6F6;
+}
+
+.restaurant__cont {
+  width: 375px;
+  margin: auto;
   padding: 30px 10px;
 }
 
@@ -454,6 +477,11 @@ h2 {
 .footer {
   background-color: #333333;
   color: white;
+}
+
+.footer__cont {
+  width: 375px;
+  margin: auto;
   padding: 20px;
 }
 
@@ -504,6 +532,7 @@ h2 {
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -45px;
+  padding-bottom: 45px;
 }
 
 .menu__service {

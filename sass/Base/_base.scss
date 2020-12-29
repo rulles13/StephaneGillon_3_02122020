@@ -11,7 +11,7 @@ h2{
 }
 
 .page{
-    max-width: 667px;
+    
     margin: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -52,7 +52,12 @@ h2{
 .ahrefno{
     text-decoration: none;
 }
-
+.link_index{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: black;
+}
 
 
 

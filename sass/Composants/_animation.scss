@@ -28,26 +28,29 @@
     border-radius: 15px;
     margin: auto;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     background-color: white;
     opacity: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .prix{
     display: flex;
     height: 68px;
-    //width: 60px;
     font-weight: 800;
     transform: translateX(0);
-    transition: transform 1000ms;
+    transition: transform 600ms;
     border: 1px solid purple;
-    position: absolute;
+    position: relative;
     right: 0;
-    top: 0;
+    top: 10px;
     align-items: flex-end;
+    justify-content: flex-end;
     padding: 10px;
     background-color: white;
-}
+    }
 
 .check_box{
     position:absolute;
@@ -55,27 +58,35 @@
     top: 0;
     width: 60px;
     height: 68px;
-    
     background-color: $colour-tertiary;
-    border-radius:0 15px 15px 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform 1000ms cubic-bezier(.32,0,.07,1); 
-}
-/*.cont_prix{
-    position: relative;
-    top: 10px;
-    right: -11px;
+    transform: translateX(60px);
+    transition: transform 600ms cubic-bezier(.32,0,.07,1);
     display: flex;
-    align-items: flex-end;
-    border: 1px solid green;
-    border-radius:0 15px 15px 0;
-}*/
+    align-items: center;
+    justify-content: center;
+}
+.check_circle{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 600ms;
+    color: $colour-tertiary;
+}
+
+
 .menu__cont__plat{
     &:hover .check_box{
-        transform: scaleX(1);  
+        transform: translateX(0);  
     }
     &:hover .prix{
         transform: translateX(-60px);
+    }
+    &:hover .check_circle{
+        transform: rotate(0);
     }
 }
