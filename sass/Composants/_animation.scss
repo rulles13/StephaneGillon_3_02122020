@@ -1,6 +1,7 @@
+/* show dishes one after one */
+
 @for $i from 1 through 9 {
     .menu__c__p--#{$i} {
-        
         animation: show 400ms 200ms*$i;
         animation-fill-mode: forwards;
     }
@@ -8,10 +9,73 @@
 
 @keyframes show {
     0% {
-        opacity: 0;
-        
+        opacity: 0;    
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* flag on dish */
+
+.menu__cont__plat{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 350px;
+    height: 68px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0;
+}
+
+.prix{
+    display: flex;
+    height: 68px;
+    //width: 60px;
+    font-weight: 800;
+    transform: translateX(0);
+    transition: transform 1000ms;
+    border: 1px solid purple;
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: white;
+}
+
+.check_box{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 68px;
+    
+    background-color: $colour-tertiary;
+    border-radius:0 15px 15px 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 1000ms cubic-bezier(.32,0,.07,1); 
+}
+/*.cont_prix{
+    position: relative;
+    top: 10px;
+    right: -11px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid green;
+    border-radius:0 15px 15px 0;
+}*/
+.menu__cont__plat{
+    &:hover .check_box{
+        transform: scaleX(1);  
+    }
+    &:hover .prix{
+        transform: translateX(-60px);
     }
 }

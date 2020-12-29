@@ -30,19 +30,7 @@
     margin: 20px 25px 5px 22px;
 
 }
-.menu__cont__plat{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 350px;
-    height: 68px;
-    border-radius: 15px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: white;
-    opacity: 0;
-}
+
 .plat{
     overflow: hidden;    
 }
@@ -58,10 +46,4 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-.prix{
-    display: flex;
-    width: 60px;
-    font-weight: 800;
-    justify-content: center;
 }
