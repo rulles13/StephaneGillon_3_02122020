@@ -36,6 +36,30 @@
     overflow: hidden;
 }
 
+.plat{
+    overflow: hidden;
+    width: 290px;
+    border: 1px solid red; 
+    
+
+    transition: width 600ms cubic-bezier(.32,0,.07,1);   
+}
+.plat__nom{
+    font-size: 1.2rem;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.plat__info{
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.cont_prix{
+    display: flex;
+}
 .prix{
     display: flex;
     height: 68px;
@@ -88,5 +112,8 @@
     }
     &:hover .check_circle{
         transform: rotate(0);
+    }
+    &:hover .plat{
+        width: 230px;
     }
 }
