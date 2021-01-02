@@ -1,3 +1,30 @@
+.explo_and_util{
+    display: block;
+    margin:auto;
+}
+
+.location{
+    display: flex;
+    height: 50px;
+    background-color: $colour-medium-grey;
+    width: 100%;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 15px 10px -12px $colour-dark-grey;    
+    .location__ico{
+        padding-right: 20px;
+    }    
+}    
+.explo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colour-light-grey;
+    padding: 20px;
+    text-align: center;
+}
+
 .util{
     width: 375px;
     padding: 30px 10px;
@@ -33,22 +60,36 @@
         margin-bottom: 20px;
         background-color: $colour-light-grey;
         &:hover{
-        background-color: lighten($colour-primary, 35);
-        .color_ico{
-        color:$colour-primary;
-        
-    }
+            background-color: lighten($colour-primary, 35);
+            .color_ico{
+            color:$colour-primary;
+            }
         }
-    }
-    
-    
-    .cont_etaps{
-        display: flex;
-        margin: auto;
-    }
-    .etape{
-        margin-left: 15px;
-    }
-    
+    }   
+}    
+.cont_etaps{
+    display: flex;
+    margin: auto;
+}
+.etape{
+    margin-left: 15px;
+}
+/* for tablet */
+@media only screen and (min-width: 768px) {
 
+}
+/* For large desktop: */
+@media only screen and (min-width: 1200px) {
+    .explo_and_util{
+        display: flex;
+        width: 800px;
+    }
+    .explo{
+        background-color: white;
+        width: 375px;
+        margin: auto;
+        border: 2px solid $colour-medium-grey;
+        border-radius: 20px;
+    }
+    
 }

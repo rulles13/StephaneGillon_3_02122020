@@ -9,27 +9,10 @@
     text-decoration: none;
     color: white;
     margin: 40px 0;
+    transition: 600ms;
     &:hover{
-        border-radius: 25px;
-        &::after{
-            border-radius: 25px;
-            opacity: 1;
-        }
-    }
-    &::after{
-        content: "Explorer nos restaurants";
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 220px;
-            height: 50px;
-            border-radius: 25px;
-            background-image: linear-gradient(to bottom right, lighten($colour-secondary,10), lighten($colour-primary,10));
-            opacity: 0;
-            z-index: 1;
-            box-shadow: 5px 5px 10px darken($colour-medium-grey, 10);
-            transition: opacity 400ms;
+        background-image: linear-gradient(to bottom right, lighten($colour-secondary,10), lighten($colour-primary,10));
+        box-shadow: 5px 5px 10px darken($colour-medium-grey, 20);
     }
 }
 

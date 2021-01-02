@@ -1,6 +1,6 @@
 /* show dishes one after one */
 
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
     .menu__c__p--#{$i} {
         animation: show 400ms 200ms*$i;
         animation-fill-mode: forwards;
@@ -28,7 +28,7 @@
     border-radius: 15px;
     margin: auto;
     margin-bottom: 20px;
-    padding: 10px 0 10px 10px;
+    padding: 12px 0 12px 10px;
     background-color: white;
     opacity: 0;
     white-space: nowrap;
@@ -38,14 +38,11 @@
 
 .plat{
     overflow: hidden;
-    width: 290px;
-    border: 1px solid red; 
-    
-
+    width: 290px; 
     transition: width 600ms cubic-bezier(.32,0,.07,1);   
 }
 .plat__nom{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 800;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -66,7 +63,6 @@
     font-weight: 800;
     transform: translateX(0);
     transition: transform 600ms;
-    border: 1px solid purple;
     position: relative;
     right: 0;
     top: 10px;
@@ -115,5 +111,34 @@
     }
     &:hover .plat{
         width: 230px;
+    }
+}
+
+/* for tablet */
+@media only screen and (min-width: 768px) {
+    .menu__cont__plat{
+        width: 650px;
+    }
+    .plat{
+        width: 580px;
+    }
+    .menu__cont__plat{
+        &:hover .plat{
+            width: 580px;
+        }
+    }
+}
+/* For large desktop: */
+@media only screen and (min-width: 1200px) {
+    .menu__cont__plat{
+        width: 350px;
+    }
+    .plat{
+        width: 290px;
+    }
+    .menu__cont__plat{
+        &:hover .plat{
+            width: 230px;
+        }
     }
 }

@@ -1,9 +1,11 @@
 .footer{
     background-color: $colour-dark-grey;
     color: white;
-    
+    position: relative;
+    top: -25px;
 }
 .footer__cont{
+    
     width: 375px;
     margin: auto;
     padding: 20px;
@@ -29,4 +31,17 @@
 .footer__icon {
     width: 15px;
     margin-right: 10px;
+}
+
+/* for tablet */
+@media only screen and (min-width: 768px) {
+    .footer__cont{
+        width: 700px;
+    }
+}
+/* For large desktop: */
+@media only screen and (min-width: 1200px) {
+    .footer__cont{
+        width: 1200px;
+    }
 }

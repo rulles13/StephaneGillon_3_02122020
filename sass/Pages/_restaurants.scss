@@ -70,3 +70,20 @@
         opacity: 1;
     }
 }
+
+/* For large desktop: */
+@media only screen and (min-width: 1200px) {
+    .restaurant__cont{
+        width: 800px;
+    }
+    .resto-flex{
+        flex-wrap: wrap;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .menu-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+}

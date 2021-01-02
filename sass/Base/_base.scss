@@ -1,17 +1,16 @@
 * {
     box-sizing: border-box;
-}
-body{
     margin: 0;
 }
+
 h1{font-size: 1.6em;}
+
 h2{
     font-size: 1.4em;
     padding: 10px 0;
 }
 
 .page{
-    
     margin: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -27,31 +26,11 @@ h2{
     margin-bottom: 15px;
     background-color: $colour-tertiary;
 }
-.location{
-    display: flex;
-    height: 50px;
-    background-color: $colour-medium-grey;
-    width: 100%;
-    font-weight: 800;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0px 15px 10px -12px $colour-dark-grey;    
-    .location__ico{
-        padding-right: 20px;
-    }    
-}    
-.explo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $colour-light-grey;
-    padding: 20px;
-    text-align: center;
-}
 
 .ahrefno{
     text-decoration: none;
 }
+
 .link_index{
     position: absolute;
     left: 20px;
@@ -59,5 +38,10 @@ h2{
     color: black;
 }
 
+.centred{
+    margin:auto;
+    width: 200px;
+    display: flex;
+}
 
 
