@@ -1,9 +1,8 @@
-.footer{
+footer{
     background-color: $colour-dark-grey;
     color: white;
-    position: relative;
-    top: -25px;
 }
+
 .footer__cont{
     
     width: 375px;
@@ -25,7 +24,6 @@
 
 .footer__style{
     list-style: none;
-    padding-inline-start: 0;
 }
 
 .footer__icon {

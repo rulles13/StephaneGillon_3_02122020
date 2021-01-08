@@ -356,7 +356,7 @@ h2 {
     opacity: 0;
   }
 }
-.header {
+header {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -561,11 +561,9 @@ h2 {
     justify-content: space-around;
   }
 }
-.footer {
+footer {
   background-color: #333333;
   color: white;
-  position: relative;
-  top: -25px;
 }
 
 .footer__cont {
@@ -586,7 +584,6 @@ h2 {
 
 .footer__style {
   list-style: none;
-  padding-inline-start: 0;
 }
 
 .footer__icon {
@@ -632,7 +629,7 @@ h2 {
   margin: auto;
   border-radius: 40px 40px 0 0;
   position: relative;
-  top: -45px;
+  margin-top: -45px;
 }
 
 .menu__service {
