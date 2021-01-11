@@ -584,6 +584,7 @@ footer {
 
 .footer__style {
   list-style: none;
+  padding: 0;
 }
 
 .footer__icon {
